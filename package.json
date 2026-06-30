@@ -1,0 +1,39 @@
+{
+  "name": "pi-retitle",
+  "version": "0.1.0",
+  "description": "Model-generated session titles for pi, powered by pi-extended-teams.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dantetekanem/pi-retitle.git"
+  },
+  "author": "dantetekanem",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "session-title",
+    "session-management",
+    "pi-extended-teams"
+  ],
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "package.json"
+  ],
+  "dependencies": {
+    "pi-extended-teams": "github:dantetekanem/pi-extended-teams"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
