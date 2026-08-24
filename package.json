@@ -2,6 +2,7 @@
   "name": "pi-retitle",
   "version": "0.1.0",
   "description": "Model-generated session titles for pi, powered by pi-extended-teams.",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dantetekanem/pi-retitle.git"
@@ -25,6 +26,9 @@
     "README.md",
     "package.json"
   ],
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
   "dependencies": {
     "pi-extended-teams": "github:dantetekanem/pi-extended-teams"
   },
